@@ -6,6 +6,7 @@ use  `call record`;
 # View The Data.
 select * from `call center`;
 
+# Note: SLA means service Level Agreement
 # 1 Call center with the longest duration of calls
 select call_center, max(`call duration in minutes`)from `call center` group by call_center limit 1;
 # Los Angeles/CA has max call duration of 45mins
